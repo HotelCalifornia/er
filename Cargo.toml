@@ -1,0 +1,9 @@
+[package]
+name = "er"
+version = "0.1.0"
+authors = ["Alex Brooke <akb.sbc@gmail.com>"]
+edition = "2018"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.7", features = ["consoleapi", "handleapi", "impl-default", "namedpipeapi", "processenv", "winbase", "winerror"] }
+native-windows-gui = "0.2.1"
